@@ -18,6 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
   button in the tool bar above to generate a regular `.md` file and any associated
   image files.
 - Commit the `.Rmd`, `.md` and the `_files` folder to the lab Github repo. 
+- Use `scale_color_manual(values = cbPalette)` and `scale_fill_manual(values = cbPalette)` for all plots. `cbPalette` is exported by the `rasilabRtemplates` package.
 
 
 ## Import libraries
@@ -27,7 +28,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(stringr)
 # standard analysis and plotting functions, includes dplyr, ggplot2 
 library(tidyverse)
-# loads lab default ggplot2 theme
+# loads lab default ggplot2 theme and provides color-blind friendly palette
 library(rasilabRtemplates)
 ```
 
@@ -56,8 +57,9 @@ processed_data %>%
 ```{r, fig.width=6, fig.height=3}
 processed_data %>% 
   gather(statistic, value, -carb) %>% 
-  ggplot(aes(x = carb, y = value)) +
+  ggplot(aes(x = carb, y = value, color = statistic)) +
   facet_wrap(~ statistic, ncol = 2) +
-  geom_jitter(width = 0)
+  geom_jitter(width = 0) +
+  scale_color_manual(values = cbPalette)
 ```
 
