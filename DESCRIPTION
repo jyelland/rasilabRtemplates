@@ -1,0 +1,12 @@
+Package: rasilabRtemplates
+Type: Package
+Title: Loads Templates For Rasi Lab Use
+Version: 0.1.0
+Author: Arvind Rasi Subramaniam
+Maintainer: Arvind Rasi Subramaniam <rasi@fredhutch.orgt>
+Description:     
+    Loads ggplot2 themes and Rmarkdown templates for Rasi lab use.
+License: GPL-4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
