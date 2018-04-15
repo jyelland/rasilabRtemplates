@@ -11,16 +11,24 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Analysis summary
+## Analysis Instructions
 
-This is an example outline of how we analyze data in our lab.
+- This is an example outline of how we analyze data in our lab.
+- When you have finished the current round of analysis, use the `Knit to github_document` 
+  button in the tool bar above to generate a regular `.md` file and any associated
+  image files.
+- Commit the `.Rmd`, `.md` and the `_files` folder to the lab Github repo. 
 
 
 ## Import libraries
 
 ```{r, message=FALSE}
+# string manipulation functions
 library(stringr)
+# standard analysis and plotting functions, includes dplyr, ggplot2 
 library(tidyverse)
+# loads lab default ggplot2 theme
+library(rasilabRtemplates)
 ```
 
 ## Import data
