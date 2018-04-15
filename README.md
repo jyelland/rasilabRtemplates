@@ -13,8 +13,8 @@ install.packages("devtools")
 devtools::install_github("rasilab/rasilabRtemplates", auth_token="PASTE_YOUR_TOKEN_HERE")
 ```
 
-- [R/ggplot2themes.R](R/ggplot2themes.R) contains the standard ggplot2 customizations for Rasi Lab.
-- [inst/rmarkdown/templates/analysis/skeleton/skeleton.Rmd](inst/rmarkdown/templates/analysis/skeleton/skeleton.Rmd) contains the standard Rmarkdown template for analyses.
+- [R/ggplot2themes.R](R/ggplot2themes.R) contains the standard ggplot2 customizations for Rasi Lab. You can load this template simply by loading this library as `library(rasilabRtemplates)`.
+- [inst/rmarkdown/templates/analysis/skeleton/skeleton.Rmd](inst/rmarkdown/templates/analysis/skeleton/skeleton.Rmd) contains the standard Rmarkdown template for analyses. You can access this template when you create a new Rmarkdown document in RStudio by clicking on the `Templates` section of `New Fle → R Markdown` window.
 
 
 
