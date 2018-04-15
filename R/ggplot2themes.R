@@ -8,6 +8,7 @@
 #' @export
 #' @import ggplot2
 theme_rasilab <- function() {
+  # http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
   cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
   theme_classic(base_family = "Helvetica", base_size = 8) +
     theme(
@@ -16,7 +17,7 @@ theme_rasilab <- function() {
       strip.text.x = element_text(size = 8),
       axis.line = element_line(color = "black", size=.25),
       axis.text = element_text(color = "black", size = 8)
-    ) +
-    scale_color_manual(values = cbPalette) +
+    ) %+replace%
+    scale_color_manual(values = cbPalette) %+replace%
     scale_fill_manual(values = cbPalette)
 }
