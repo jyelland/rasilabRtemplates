@@ -6,6 +6,9 @@ Author: Arvind Rasi Subramaniam
 Maintainer: Arvind Rasi Subramaniam <rasi@fredhutch.orgt>
 Description:     
     Loads ggplot2 themes and Rmarkdown templates for Rasi lab use.
+Depends:
+    R (>= 3.3.0),
+    ggplot2 (>= 2.1.0),
 License: GPL-4.0
 Encoding: UTF-8
 LazyData: true
