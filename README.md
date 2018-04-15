@@ -1,5 +1,7 @@
 # Analysis Templates for Rasilab
 
+See [inst/rmarkdown/templates/analysis/skeleton/skeleton.md](inst/rmarkdown/templates/analysis/skeleton/skeleton.md) for an example of how this package is used.
+
 To install this package into your R environment, you can use the [install_github](https://www.rdocumentation.org/packages/devtools/versions/1.13.3/topics/install_github) function from the `devtools` package.
 
 First create a [Personal access token](https://github.com/settings/tokens) on Github. 
