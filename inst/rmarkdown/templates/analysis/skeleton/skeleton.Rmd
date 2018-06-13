@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
 ## Analysis Instructions
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Import libraries
 
-```{r, message=FALSE}
+```{r}
 # string manipulation functions
 library(stringr)
 # standard analysis and plotting functions, includes dplyr, ggplot2 
@@ -34,7 +34,7 @@ library(rasilabRtemplates)
 
 ## Import data
 
-```{r, message=FALSE}
+```{r}
 data <- read_csv("https://github.com/tidyverse/readr/raw/master/inst/extdata/mtcars.csv") %>% 
   print()
 ```
@@ -54,7 +54,7 @@ processed_data %>%
 
 ## Plot data
 
-```{r example_plot, fig.width=6, fig.height=3, }
+```{r example_plot, fig.width=6, fig.height=3}
 processed_data %>% 
   gather(statistic, value, -carb) %>% 
   ggplot(aes(x = carb, y = value, color = statistic)) +
