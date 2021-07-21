@@ -14,7 +14,7 @@ theme_rasilab <- function() {
       legend.text = element_text(size = 8),
       strip.text.x = element_text(size = 8),
       axis.line = element_line(color = "black", size=.25),
-      axis.text = element_text(color = "black", size = 8)
+      axis.text = element_text(color = "black", size = 6)
     )
 }
 
