@@ -11,10 +11,8 @@ theme_rasilab <- function() {
   theme_classic(base_family = "Helvetica", base_size = 8) +
     theme(
       strip.background = ggplot2::element_blank(),
-      legend.text = element_text(size = 10),
-      strip.text.x = element_text(size = 10),
-      axis.line = element_line(color = "grey", size=.25),
-      axis.text = element_text(color = "grey", size = 8)
+      legend.text = element_text(size = 8),
+      strip.text.x = element_text(size = 8),
     )
 }
 
