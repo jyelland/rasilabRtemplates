@@ -8,11 +8,11 @@
 #' @export
 #' @import ggplot2
 theme_rasilab <- function() {
-  theme_classic(base_family = "Helvetica", base_size = 8) +
+  theme_classic(base_family = "Helvetica", base_size = 12) +
     theme(
       strip.background = ggplot2::element_blank(),
-      legend.text = element_text(size = 8),
-      strip.text.x = element_text(size = 8),
+      legend.text = element_text(size = 12),
+      strip.text.x = element_text(size = 12),
     )
 }
 
