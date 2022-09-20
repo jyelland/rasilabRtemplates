@@ -7,4 +7,6 @@
   ggplot2::theme_set(theme_rasilab())
   # set default color to color-blind friendly palette
   options(ggplot2.discrete.colour = cbPalette)
+  # optimize plot width for Jupyter notebook
+  options(repr.plot.width=4, repr.plot.height=3)
 }
