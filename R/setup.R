@@ -9,4 +9,6 @@
   options(ggplot2.discrete.colour = cbPalette)
   # optimize plot width for Jupyter notebook
   options(repr.plot.width=4, repr.plot.height=3)
+  # decrease number of rows shown
+  options(repr.matrix.max.rows=10)
 }
