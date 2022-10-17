@@ -8,7 +8,7 @@
 #' @export
 #' @import ggplot2
 theme_rasilab <- function() {
-  theme_classic(base_family = "Roboto", base_size = 12) +
+  theme_classic(base_family = "Helvetica", base_size = 12) +
     theme(
       strip.background = ggplot2::element_blank(),
       legend.text = element_text(size = 12),
