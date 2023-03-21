@@ -20,3 +20,10 @@ theme_rasilab <- function() {
 #' see http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
 #' @export
 cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+safe_colorblind_palette <- c(
+  "#88CCEE", "#CC6677", "#117733", "#999933", "#332288", "#AA4499",
+  "#661100", "#44AA99", "#882255", "#6699CC", "#DDCC77", "#888888"
+)
+
+cbPalette_12 <- safe_colorblind_palette
