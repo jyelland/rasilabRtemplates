@@ -6,8 +6,8 @@
   # switch the default theme to theme_rasilab
   ggplot2::theme_set(theme_rasilab())
   # set default color to color-blind friendly palette
-  options(ggplot2.discrete.colour = cbPalette)
-  options(ggplot2.discrete.fill = cbPalette)
+  options(ggplot2.discrete.colour = cbPalette_12)
+  options(ggplot2.discrete.fill = cbPalette_12)
   # optimize plot width for Jupyter notebook
   options(repr.plot.width=4, repr.plot.height=3)
   # decrease number of rows shown
