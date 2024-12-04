@@ -5,7 +5,9 @@
 \alias{cbPalette}
 \title{Color-blind friendly palette
 see http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/}
-\format{An object of class \code{character} of length 8.}
+\format{
+An object of class \code{character} of length 8.
+}
 \usage{
 cbPalette
 }

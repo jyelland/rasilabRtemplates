@@ -27,3 +27,18 @@ safe_colorblind_palette <- c(
 )
 
 cbPalette_12 <- safe_colorblind_palette
+
+#' Large labels for presentations
+#' 
+#' This function increases label sizes for better readability during presentations.
+#' @export
+large_labels <- function() {
+  theme(
+    axis.text = element_text(size = 12),
+    axis.title  = element_text(size = 16),
+    strip.text.x = element_text(size = 16),
+    strip.text.y = element_text(size = 16),
+    legend.text = element_text(size = 16),
+    plot.title = element_text(size = 20, face = "bold"), 
+  )
+}
