@@ -1,7 +1,7 @@
 Package: rasilabRtemplates
 Type: Package
 Title: Loads Templates For Rasi Lab Use
-Version: 0.1.0
+Version: 0.5.0
 Authors: Arvind Rasi Subramaniam, Jamie Yelland
 Maintainer: Arvind Rasi Subramaniam <rasi@fredhutch.orgt>
 Description: 
